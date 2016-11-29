@@ -29,20 +29,20 @@ Partial Class form_login
         Me.lbl_error_login = New System.Windows.Forms.Label()
         Me.but_login = New System.Windows.Forms.Button()
         Me.but_SignUp = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lbl_signup = New System.Windows.Forms.Label()
-        Me.lbl_signup_user = New System.Windows.Forms.Label()
-        Me.txt_signup_user = New System.Windows.Forms.TextBox()
-        Me.lbl_signup_pass = New System.Windows.Forms.Label()
-        Me.txt_signup_pass = New System.Windows.Forms.TextBox()
-        Me.lbl_signup_pass2 = New System.Windows.Forms.Label()
-        Me.txt_signup_pass2 = New System.Windows.Forms.TextBox()
-        Me.lbl_signup_Fname = New System.Windows.Forms.Label()
-        Me.lbl_signup_Lname = New System.Windows.Forms.Label()
-        Me.txt_signup_Fname = New System.Windows.Forms.TextBox()
-        Me.txt_signup_Lname = New System.Windows.Forms.TextBox()
+        Me.panel_signup = New System.Windows.Forms.Panel()
         Me.but_signup_add = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.txt_signup_Lname = New System.Windows.Forms.TextBox()
+        Me.txt_signup_Fname = New System.Windows.Forms.TextBox()
+        Me.lbl_signup_Lname = New System.Windows.Forms.Label()
+        Me.lbl_signup_Fname = New System.Windows.Forms.Label()
+        Me.txt_signup_pass2 = New System.Windows.Forms.TextBox()
+        Me.lbl_signup_pass2 = New System.Windows.Forms.Label()
+        Me.txt_signup_pass = New System.Windows.Forms.TextBox()
+        Me.lbl_signup_pass = New System.Windows.Forms.Label()
+        Me.txt_signup_user = New System.Windows.Forms.TextBox()
+        Me.lbl_signup_user = New System.Windows.Forms.Label()
+        Me.lbl_signup = New System.Windows.Forms.Label()
+        Me.panel_signup.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbl_user
@@ -51,7 +51,7 @@ Partial Class form_login
         Me.lbl_user.Location = New System.Drawing.Point(14, 58)
         Me.lbl_user.Name = "lbl_user"
         Me.lbl_user.Size = New System.Drawing.Size(103, 17)
-        Me.lbl_user.TabIndex = 1
+        Me.lbl_user.TabIndex = 0
         Me.lbl_user.Text = "User:"
         Me.lbl_user.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
@@ -60,7 +60,7 @@ Partial Class form_login
         Me.txt_user.Location = New System.Drawing.Point(123, 55)
         Me.txt_user.Name = "txt_user"
         Me.txt_user.Size = New System.Drawing.Size(147, 22)
-        Me.txt_user.TabIndex = 2
+        Me.txt_user.TabIndex = 1
         '
         'lbl_pass
         '
@@ -68,7 +68,7 @@ Partial Class form_login
         Me.lbl_pass.Location = New System.Drawing.Point(11, 84)
         Me.lbl_pass.Name = "lbl_pass"
         Me.lbl_pass.Size = New System.Drawing.Size(106, 17)
-        Me.lbl_pass.TabIndex = 1
+        Me.lbl_pass.TabIndex = 0
         Me.lbl_pass.Text = "Password:"
         Me.lbl_pass.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
@@ -76,6 +76,7 @@ Partial Class form_login
         '
         Me.txt_pass.Location = New System.Drawing.Point(123, 81)
         Me.txt_pass.Name = "txt_pass"
+        Me.txt_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txt_pass.Size = New System.Drawing.Size(147, 22)
         Me.txt_pass.TabIndex = 2
         '
@@ -88,7 +89,7 @@ Partial Class form_login
         Me.lbl_error_login.Location = New System.Drawing.Point(99, 106)
         Me.lbl_error_login.Name = "lbl_error_login"
         Me.lbl_error_login.Size = New System.Drawing.Size(95, 13)
-        Me.lbl_error_login.TabIndex = 1
+        Me.lbl_error_login.TabIndex = 0
         Me.lbl_error_login.Text = "Password is wrong"
         Me.lbl_error_login.Visible = False
         '
@@ -98,7 +99,7 @@ Partial Class form_login
         Me.but_login.Location = New System.Drawing.Point(14, 132)
         Me.but_login.Name = "but_login"
         Me.but_login.Size = New System.Drawing.Size(149, 29)
-        Me.but_login.TabIndex = 0
+        Me.but_login.TabIndex = 3
         Me.but_login.Text = "Login"
         Me.but_login.UseVisualStyleBackColor = True
         '
@@ -108,29 +109,123 @@ Partial Class form_login
         Me.but_SignUp.Location = New System.Drawing.Point(169, 132)
         Me.but_SignUp.Name = "but_SignUp"
         Me.but_SignUp.Size = New System.Drawing.Size(101, 29)
-        Me.but_SignUp.TabIndex = 3
+        Me.but_SignUp.TabIndex = 4
         Me.but_SignUp.Text = "Sign Up"
         Me.but_SignUp.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'panel_signup
         '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.but_signup_add)
-        Me.Panel1.Controls.Add(Me.txt_signup_Lname)
-        Me.Panel1.Controls.Add(Me.txt_signup_Fname)
-        Me.Panel1.Controls.Add(Me.lbl_signup_Lname)
-        Me.Panel1.Controls.Add(Me.lbl_signup_Fname)
-        Me.Panel1.Controls.Add(Me.txt_signup_pass2)
-        Me.Panel1.Controls.Add(Me.lbl_signup_pass2)
-        Me.Panel1.Controls.Add(Me.txt_signup_pass)
-        Me.Panel1.Controls.Add(Me.lbl_signup_pass)
-        Me.Panel1.Controls.Add(Me.txt_signup_user)
-        Me.Panel1.Controls.Add(Me.lbl_signup_user)
-        Me.Panel1.Controls.Add(Me.lbl_signup)
-        Me.Panel1.Location = New System.Drawing.Point(12, 237)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(258, 390)
-        Me.Panel1.TabIndex = 4
+        Me.panel_signup.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.panel_signup.Controls.Add(Me.but_signup_add)
+        Me.panel_signup.Controls.Add(Me.txt_signup_Lname)
+        Me.panel_signup.Controls.Add(Me.txt_signup_Fname)
+        Me.panel_signup.Controls.Add(Me.lbl_signup_Lname)
+        Me.panel_signup.Controls.Add(Me.lbl_signup_Fname)
+        Me.panel_signup.Controls.Add(Me.txt_signup_pass2)
+        Me.panel_signup.Controls.Add(Me.lbl_signup_pass2)
+        Me.panel_signup.Controls.Add(Me.txt_signup_pass)
+        Me.panel_signup.Controls.Add(Me.lbl_signup_pass)
+        Me.panel_signup.Controls.Add(Me.txt_signup_user)
+        Me.panel_signup.Controls.Add(Me.lbl_signup_user)
+        Me.panel_signup.Controls.Add(Me.lbl_signup)
+        Me.panel_signup.Location = New System.Drawing.Point(12, 237)
+        Me.panel_signup.Name = "panel_signup"
+        Me.panel_signup.Size = New System.Drawing.Size(258, 390)
+        Me.panel_signup.TabIndex = 5
+        '
+        'but_signup_add
+        '
+        Me.but_signup_add.Location = New System.Drawing.Point(3, 351)
+        Me.but_signup_add.Name = "but_signup_add"
+        Me.but_signup_add.Size = New System.Drawing.Size(248, 29)
+        Me.but_signup_add.TabIndex = 6
+        Me.but_signup_add.TabStop = False
+        Me.but_signup_add.Text = "Add user"
+        Me.but_signup_add.UseVisualStyleBackColor = True
+        '
+        'txt_signup_Lname
+        '
+        Me.txt_signup_Lname.Location = New System.Drawing.Point(3, 322)
+        Me.txt_signup_Lname.Name = "txt_signup_Lname"
+        Me.txt_signup_Lname.Size = New System.Drawing.Size(248, 22)
+        Me.txt_signup_Lname.TabIndex = 5
+        Me.txt_signup_Lname.TabStop = False
+        '
+        'txt_signup_Fname
+        '
+        Me.txt_signup_Fname.Location = New System.Drawing.Point(3, 276)
+        Me.txt_signup_Fname.Name = "txt_signup_Fname"
+        Me.txt_signup_Fname.Size = New System.Drawing.Size(248, 22)
+        Me.txt_signup_Fname.TabIndex = 4
+        Me.txt_signup_Fname.TabStop = False
+        '
+        'lbl_signup_Lname
+        '
+        Me.lbl_signup_Lname.Location = New System.Drawing.Point(4, 302)
+        Me.lbl_signup_Lname.Name = "lbl_signup_Lname"
+        Me.lbl_signup_Lname.Size = New System.Drawing.Size(247, 17)
+        Me.lbl_signup_Lname.TabIndex = 0
+        Me.lbl_signup_Lname.Text = "Last Name"
+        '
+        'lbl_signup_Fname
+        '
+        Me.lbl_signup_Fname.Location = New System.Drawing.Point(4, 256)
+        Me.lbl_signup_Fname.Name = "lbl_signup_Fname"
+        Me.lbl_signup_Fname.Size = New System.Drawing.Size(247, 17)
+        Me.lbl_signup_Fname.TabIndex = 0
+        Me.lbl_signup_Fname.Text = "First Name"
+        '
+        'txt_signup_pass2
+        '
+        Me.txt_signup_pass2.Location = New System.Drawing.Point(3, 185)
+        Me.txt_signup_pass2.Name = "txt_signup_pass2"
+        Me.txt_signup_pass2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txt_signup_pass2.Size = New System.Drawing.Size(248, 22)
+        Me.txt_signup_pass2.TabIndex = 3
+        Me.txt_signup_pass2.TabStop = False
+        '
+        'lbl_signup_pass2
+        '
+        Me.lbl_signup_pass2.Location = New System.Drawing.Point(4, 165)
+        Me.lbl_signup_pass2.Name = "lbl_signup_pass2"
+        Me.lbl_signup_pass2.Size = New System.Drawing.Size(247, 17)
+        Me.lbl_signup_pass2.TabIndex = 0
+        Me.lbl_signup_pass2.Text = "Re-type password"
+        '
+        'txt_signup_pass
+        '
+        Me.txt_signup_pass.Location = New System.Drawing.Point(3, 139)
+        Me.txt_signup_pass.Name = "txt_signup_pass"
+        Me.txt_signup_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txt_signup_pass.Size = New System.Drawing.Size(248, 22)
+        Me.txt_signup_pass.TabIndex = 2
+        Me.txt_signup_pass.TabStop = False
+        '
+        'lbl_signup_pass
+        '
+        Me.lbl_signup_pass.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_signup_pass.Location = New System.Drawing.Point(4, 119)
+        Me.lbl_signup_pass.Name = "lbl_signup_pass"
+        Me.lbl_signup_pass.Size = New System.Drawing.Size(247, 17)
+        Me.lbl_signup_pass.TabIndex = 0
+        Me.lbl_signup_pass.Text = "Password"
+        '
+        'txt_signup_user
+        '
+        Me.txt_signup_user.Location = New System.Drawing.Point(3, 77)
+        Me.txt_signup_user.Name = "txt_signup_user"
+        Me.txt_signup_user.Size = New System.Drawing.Size(248, 22)
+        Me.txt_signup_user.TabIndex = 1
+        Me.txt_signup_user.TabStop = False
+        '
+        'lbl_signup_user
+        '
+        Me.lbl_signup_user.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_signup_user.Location = New System.Drawing.Point(4, 57)
+        Me.lbl_signup_user.Name = "lbl_signup_user"
+        Me.lbl_signup_user.Size = New System.Drawing.Size(247, 17)
+        Me.lbl_signup_user.TabIndex = 0
+        Me.lbl_signup_user.Text = "Username"
         '
         'lbl_signup
         '
@@ -142,99 +237,12 @@ Partial Class form_login
         Me.lbl_signup.Text = "Sign Up"
         Me.lbl_signup.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lbl_signup_user
-        '
-        Me.lbl_signup_user.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_signup_user.Location = New System.Drawing.Point(4, 57)
-        Me.lbl_signup_user.Name = "lbl_signup_user"
-        Me.lbl_signup_user.Size = New System.Drawing.Size(247, 17)
-        Me.lbl_signup_user.TabIndex = 1
-        Me.lbl_signup_user.Text = "Username"
-        '
-        'txt_signup_user
-        '
-        Me.txt_signup_user.Location = New System.Drawing.Point(3, 77)
-        Me.txt_signup_user.Name = "txt_signup_user"
-        Me.txt_signup_user.Size = New System.Drawing.Size(248, 22)
-        Me.txt_signup_user.TabIndex = 2
-        '
-        'lbl_signup_pass
-        '
-        Me.lbl_signup_pass.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_signup_pass.Location = New System.Drawing.Point(4, 119)
-        Me.lbl_signup_pass.Name = "lbl_signup_pass"
-        Me.lbl_signup_pass.Size = New System.Drawing.Size(247, 17)
-        Me.lbl_signup_pass.TabIndex = 1
-        Me.lbl_signup_pass.Text = "Password"
-        '
-        'txt_signup_pass
-        '
-        Me.txt_signup_pass.Location = New System.Drawing.Point(3, 139)
-        Me.txt_signup_pass.Name = "txt_signup_pass"
-        Me.txt_signup_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.txt_signup_pass.Size = New System.Drawing.Size(248, 22)
-        Me.txt_signup_pass.TabIndex = 2
-        '
-        'lbl_signup_pass2
-        '
-        Me.lbl_signup_pass2.Location = New System.Drawing.Point(4, 165)
-        Me.lbl_signup_pass2.Name = "lbl_signup_pass2"
-        Me.lbl_signup_pass2.Size = New System.Drawing.Size(247, 17)
-        Me.lbl_signup_pass2.TabIndex = 1
-        Me.lbl_signup_pass2.Text = "Re-type password"
-        '
-        'txt_signup_pass2
-        '
-        Me.txt_signup_pass2.Location = New System.Drawing.Point(3, 185)
-        Me.txt_signup_pass2.Name = "txt_signup_pass2"
-        Me.txt_signup_pass2.Size = New System.Drawing.Size(248, 22)
-        Me.txt_signup_pass2.TabIndex = 2
-        '
-        'lbl_signup_Fname
-        '
-        Me.lbl_signup_Fname.Location = New System.Drawing.Point(4, 256)
-        Me.lbl_signup_Fname.Name = "lbl_signup_Fname"
-        Me.lbl_signup_Fname.Size = New System.Drawing.Size(247, 17)
-        Me.lbl_signup_Fname.TabIndex = 1
-        Me.lbl_signup_Fname.Text = "First Name"
-        '
-        'lbl_signup_Lname
-        '
-        Me.lbl_signup_Lname.Location = New System.Drawing.Point(4, 302)
-        Me.lbl_signup_Lname.Name = "lbl_signup_Lname"
-        Me.lbl_signup_Lname.Size = New System.Drawing.Size(247, 17)
-        Me.lbl_signup_Lname.TabIndex = 1
-        Me.lbl_signup_Lname.Text = "Last Name"
-        '
-        'txt_signup_Fname
-        '
-        Me.txt_signup_Fname.Location = New System.Drawing.Point(3, 276)
-        Me.txt_signup_Fname.Name = "txt_signup_Fname"
-        Me.txt_signup_Fname.Size = New System.Drawing.Size(248, 22)
-        Me.txt_signup_Fname.TabIndex = 2
-        '
-        'txt_signup_Lname
-        '
-        Me.txt_signup_Lname.Location = New System.Drawing.Point(3, 322)
-        Me.txt_signup_Lname.Name = "txt_signup_Lname"
-        Me.txt_signup_Lname.Size = New System.Drawing.Size(248, 22)
-        Me.txt_signup_Lname.TabIndex = 2
-        '
-        'but_signup_add
-        '
-        Me.but_signup_add.Location = New System.Drawing.Point(3, 351)
-        Me.but_signup_add.Name = "but_signup_add"
-        Me.but_signup_add.Size = New System.Drawing.Size(248, 29)
-        Me.but_signup_add.TabIndex = 3
-        Me.but_signup_add.Text = "Add user"
-        Me.but_signup_add.UseVisualStyleBackColor = True
-        '
         'form_login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(282, 639)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.panel_signup)
         Me.Controls.Add(Me.but_SignUp)
         Me.Controls.Add(Me.but_login)
         Me.Controls.Add(Me.lbl_error_login)
@@ -247,8 +255,8 @@ Partial Class form_login
         Me.Name = "form_login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.panel_signup.ResumeLayout(False)
+        Me.panel_signup.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -261,7 +269,7 @@ Partial Class form_login
     Friend WithEvents lbl_error_login As Label
     Friend WithEvents but_login As Button
     Friend WithEvents but_SignUp As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents panel_signup As Panel
     Friend WithEvents but_signup_add As Button
     Friend WithEvents txt_signup_Lname As TextBox
     Friend WithEvents txt_signup_Fname As TextBox

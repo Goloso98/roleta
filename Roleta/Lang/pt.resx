@@ -174,7 +174,7 @@
     <comment>Modulo1 -&gt; StartFiles()</comment>
   </data>
   <data name="msg1_line2" xml:space="preserve">
-    <value>Foi resetada</value>
+    <value>Foi corrigida</value>
     <comment>Modulo1 -&gt; StartFiles()</comment>
   </data>
   <data name="msg1_title1" xml:space="preserve">
@@ -192,5 +192,40 @@
   <data name="msg2_title1" xml:space="preserve">
     <value>Criar novo utilizador</value>
     <comment>form_login -&gt; butao(login*click)</comment>
+  </data>
+  <data name="Informacao" xml:space="preserve">
+    <value>Informação</value>
+    <comment>generico</comment>
+  </data>
+  <data name="msg3_linha1" xml:space="preserve">
+    <value>Mínimo de 3 carateres</value>
+    <comment>form_login -&gt; but_signup_add_Clic</comment>
+  </data>
+  <data name="msg3_title1" xml:space="preserve">
+    <value>Criar conta</value>
+    <comment>form_login -&gt; but_signup_add_Clic</comment>
+  </data>
+  <data name="msg4_linha1" xml:space="preserve">
+    <value>Campo de preenchimento obrigatório.</value>
+    <comment>form_login -&gt; but_signup_add_Clic</comment>
+  </data>
+  <data name="msg4_title1" xml:space="preserve">
+    <value>Campos vazios</value>
+    <comment>form_login -&gt; but_signup_add_Clic</comment>
+  </data>
+  <data name="msg5_linha1" xml:space="preserve">
+    <value>As palavra-passes não são iguais</value>
+  </data>
+  <data name="msg6_linha1" xml:space="preserve">
+    <value>Utilizador já em uso</value>
+  </data>
+  <data name="msg7" xml:space="preserve">
+    <value>Nomes não podem ter espaços.</value>
+  </data>
+  <data name="msg8" xml:space="preserve">
+    <value>Utilizador adicionado.</value>
+  </data>
+  <data name="Sucesso" xml:space="preserve">
+    <value>Sucesso</value>
   </data>
 </root>

@@ -92,6 +92,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Informação.
+        '''</summary>
+        Friend Shared ReadOnly Property Informacao() As String
+            Get
+                Return ResourceManager.GetString("Informacao", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Palavra-chave errada.
         '''</summary>
         Friend Shared ReadOnly Property lbl_error_login() As String
@@ -191,7 +200,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Foi resetada.
+        '''  Looks up a localized string similar to Foi corrigida.
         '''</summary>
         Friend Shared ReadOnly Property msg1_line2() As String
             Get
@@ -232,6 +241,87 @@ Namespace My.Resources
         Friend Shared ReadOnly Property msg2_title1() As String
             Get
                 Return ResourceManager.GetString("msg2_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Mínimo de 3 carateres.
+        '''</summary>
+        Friend Shared ReadOnly Property msg3_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg3_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Criar conta.
+        '''</summary>
+        Friend Shared ReadOnly Property msg3_title1() As String
+            Get
+                Return ResourceManager.GetString("msg3_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Campo de preenchimento obrigatório..
+        '''</summary>
+        Friend Shared ReadOnly Property msg4_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg4_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Campos vazios.
+        '''</summary>
+        Friend Shared ReadOnly Property msg4_title1() As String
+            Get
+                Return ResourceManager.GetString("msg4_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to As palavra-passes não são iguais.
+        '''</summary>
+        Friend Shared ReadOnly Property msg5_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg5_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Utilizador já em uso.
+        '''</summary>
+        Friend Shared ReadOnly Property msg6_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg6_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Nomes não podem ter espaços..
+        '''</summary>
+        Friend Shared ReadOnly Property msg7() As String
+            Get
+                Return ResourceManager.GetString("msg7", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Utilizador adicionado..
+        '''</summary>
+        Friend Shared ReadOnly Property msg8() As String
+            Get
+                Return ResourceManager.GetString("msg8", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Sucesso.
+        '''</summary>
+        Friend Shared ReadOnly Property Sucesso() As String
+            Get
+                Return ResourceManager.GetString("Sucesso", resourceCulture)
             End Get
         End Property
     End Class

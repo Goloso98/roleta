@@ -1,38 +1,38 @@
-﻿Imports System
-Imports System.Globalization
-Imports System.Security.Cryptography
+﻿Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Environment
 Imports System.IO
-Imports System.IO.Directory
-Imports System.IO.File
-Imports System.Resources
-Imports System.Reflection
-Imports System.Threading
-Imports System.Threading.Thread
+'Imports System
+'Imports System.Globalization
+'Imports System.IO.Directory
+'Imports System.IO.File
+'Imports System.Resources
+'Imports System.Reflection
+'Imports System.Threading
+'Imports System.Threading.Thread
 
 Module Module1
-
-    Public culture As String = System.Globalization.CultureInfo.CurrentCulture.ToString.ToUpper.Substring(0, 2)
+    'Public culture As String = System.Globalization.CultureInfo.CurrentCulture.ToString.ToUpper.Substring(0, 2)
     'Public culture As String = CultureInfo.CurrentCulture.TwoLetterISOLanguageName
     'Public culture As CultureInfo = CultureInfo.CurrentCulture
+
     Public appfolder As String = GetAppDataPath() & "\roleta"
     Public users__txt As String = appfolder & "\users.txt"
     Public pass__txt As String = appfolder & "\pass.txt"
+    Public nomes__txt As String = appfolder & "\names.txt"
 
     Public Function GetAppDataPath() As String ' pasta %appdata%
-        Return Environment.GetFolderPath(SpecialFolder.ApplicationData)
+        Return GetFolderPath(SpecialFolder.ApplicationData)
     End Function
 
-
-    Public rm As Resources.ResourceManager
     'Function definir linguagem
+    Private rm As Resources.ResourceManager
     Public Function getRMValue(ByVal strValue As String)
         Dim strLanguage As String
 
         If IsNothing(rm) Then
             'Get system language
-            strLanguage = System.Globalization.CultureInfo.CurrentCulture.ToString.ToUpper.Substring(0, 2)
+            strLanguage = Globalization.CultureInfo.CurrentCulture.ToString.ToUpper.Substring(0, 2)
 
             'Set resource manager
             Select Case strLanguage
@@ -42,10 +42,8 @@ Module Module1
                     rm = My.Resources.all.ResourceManager
             End Select
         End If
-
         getRMValue = rm.GetString(strValue)
     End Function
-
 
     Public Sub StartFiles()
         Try
@@ -53,20 +51,28 @@ Module Module1
                 Directory.CreateDirectory(appfolder)
             End If
             If Not File.Exists(users__txt) Then
-                File.Create(users__txt)
+                File.Create(users__txt).Close()
             End If
             If Not File.Exists(pass__txt) Then
-                File.Create(pass__txt)
+                File.Create(pass__txt).Close()
+            End If
+            If Not File.Exists(nomes__txt) Then
+                File.Create(nomes__txt).Close()
             End If
 
             Dim file_users_length As Integer = File.ReadAllLines(users__txt).Length
-            Dim file_pass_length = File.ReadAllLines(pass__txt).Length
+            Dim file_pass_length As Integer = File.ReadAllLines(pass__txt).Length
+            Dim file_nomes_length As Integer = File.ReadAllLines(nomes__txt).Length
 
-            If file_users_length <> file_pass_length Then
+            If file_users_length <> file_pass_length _
+                Or file_users_length <> file_nomes_length _
+                Or file_pass_length <> file_nomes_length Then
                 File.Delete(users__txt)
                 File.Delete(pass__txt)
-                File.Create(users__txt)
-                File.Create(pass__txt)
+                File.Delete(nomes__txt)
+                File.Create(users__txt).Close()
+                File.Create(pass__txt).Close()
+                File.Create(nomes__txt).Close()
 
                 MessageBox.Show(getRMValue("msg1_line1") & vbCrLf &
                                 getRMValue("msg1_line2"),
@@ -76,10 +82,15 @@ Module Module1
                                 MessageBoxDefaultButton.Button1)
 
             End If
+            'FileClose(users__txt)
+            'FileClose(pass__txt)
+            'FileClose(nomes__txt)
+            'Dim fs As FileStream = File.Create(users__txt)
+            'File.Create(users__txt).Close()
+
 
         Catch exception1 As Exception
             Console.WriteLine(exception1.ToString)
-
         End Try
     End Sub
 
@@ -126,6 +137,38 @@ Module Module1
             Return -1
         End If
     End Function
+
+    Public Function EncontarEspacos(texto As String) As Boolean
+        Dim counter As Integer
+        Dim espaco As Integer
+        counter = 1
+        While counter <= texto.Length And espaco <> 1
+            If Mid(texto, counter, 1) = " " Then
+                espaco = 1
+            End If
+            counter += 1
+        End While
+
+        If espaco = 1 Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
+    Sub OrganizarNome(ByRef nome As String, ByRef apelido As String)
+        If nome.Length = 1 Then
+            nome = UCase(nome)
+        Else
+            nome = UCase(Left(nome, 1)) + LCase(Right(nome, nome.Length - 1))
+        End If
+
+        If apelido.Length = 1 Then
+            apelido = UCase(apelido)
+        Else
+            apelido = UCase(Left(apelido, 1)) + LCase(Right(apelido, apelido.Length - 1))
+        End If
+    End Sub
 
     '------encriptacao......
     Dim DES As New TripleDESCryptoServiceProvider

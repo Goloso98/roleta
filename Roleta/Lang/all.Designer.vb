@@ -92,6 +92,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Information.
+        '''</summary>
+        Friend Shared ReadOnly Property Informacao() As String
+            Get
+                Return ResourceManager.GetString("Informacao", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Password is wrong.
         '''</summary>
         Friend Shared ReadOnly Property lbl_error_login() As String
@@ -232,6 +241,87 @@ Namespace My.Resources
         Friend Shared ReadOnly Property msg2_title1() As String
             Get
                 Return ResourceManager.GetString("msg2_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Min of 3 carateres.
+        '''</summary>
+        Friend Shared ReadOnly Property msg3_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg3_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Sign up.
+        '''</summary>
+        Friend Shared ReadOnly Property msg3_title1() As String
+            Get
+                Return ResourceManager.GetString("msg3_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Fill in the field..
+        '''</summary>
+        Friend Shared ReadOnly Property msg4_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg4_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Missing fields.
+        '''</summary>
+        Friend Shared ReadOnly Property msg4_title1() As String
+            Get
+                Return ResourceManager.GetString("msg4_title1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Passwords don&apos;t match.
+        '''</summary>
+        Friend Shared ReadOnly Property msg5_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg5_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to User already exists.
+        '''</summary>
+        Friend Shared ReadOnly Property msg6_linha1() As String
+            Get
+                Return ResourceManager.GetString("msg6_linha1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Names can&apos;t include spaces..
+        '''</summary>
+        Friend Shared ReadOnly Property msg7() As String
+            Get
+                Return ResourceManager.GetString("msg7", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to User added..
+        '''</summary>
+        Friend Shared ReadOnly Property msg8() As String
+            Get
+                Return ResourceManager.GetString("msg8", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Success.
+        '''</summary>
+        Friend Shared ReadOnly Property Sucesso() As String
+            Get
+                Return ResourceManager.GetString("Sucesso", resourceCulture)
             End Get
         End Property
     End Class
