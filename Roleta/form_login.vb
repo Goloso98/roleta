@@ -80,7 +80,8 @@
             Console.WriteLine("sucesso login")
             Console.WriteLine(Decrypt(LerLinha(linha, nomes__txt), Hash))
             'proximo_form.show()
-            'Close()
+            frmCasino.Show()
+            Hide()
         End If
     End Sub
 
