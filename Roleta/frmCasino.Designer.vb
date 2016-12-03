@@ -60,6 +60,7 @@ Partial Class frmCasino
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.chb_audio = New System.Windows.Forms.CheckBox()
+        Me.butStats = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -76,9 +77,10 @@ Partial Class frmCasino
         Me.lbl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl11.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl11.ForeColor = System.Drawing.Color.White
-        Me.lbl11.Location = New System.Drawing.Point(128, 189)
+        Me.lbl11.Location = New System.Drawing.Point(171, 233)
+        Me.lbl11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl11.Name = "lbl11"
-        Me.lbl11.Size = New System.Drawing.Size(100, 100)
+        Me.lbl11.Size = New System.Drawing.Size(133, 123)
         Me.lbl11.TabIndex = 0
         Me.lbl11.Text = "19"
         Me.lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -89,9 +91,10 @@ Partial Class frmCasino
         Me.lbl12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl12.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl12.ForeColor = System.Drawing.Color.White
-        Me.lbl12.Location = New System.Drawing.Point(244, 189)
+        Me.lbl12.Location = New System.Drawing.Point(325, 233)
+        Me.lbl12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl12.Name = "lbl12"
-        Me.lbl12.Size = New System.Drawing.Size(100, 100)
+        Me.lbl12.Size = New System.Drawing.Size(133, 123)
         Me.lbl12.TabIndex = 0
         Me.lbl12.Text = "20"
         Me.lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -102,9 +105,10 @@ Partial Class frmCasino
         Me.lbl10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl10.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl10.ForeColor = System.Drawing.Color.White
-        Me.lbl10.Location = New System.Drawing.Point(12, 189)
+        Me.lbl10.Location = New System.Drawing.Point(16, 233)
+        Me.lbl10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl10.Name = "lbl10"
-        Me.lbl10.Size = New System.Drawing.Size(100, 100)
+        Me.lbl10.Size = New System.Drawing.Size(133, 123)
         Me.lbl10.TabIndex = 0
         Me.lbl10.Text = "18"
         Me.lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -115,9 +119,10 @@ Partial Class frmCasino
         Me.lbl14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl14.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl14.ForeColor = System.Drawing.Color.White
-        Me.lbl14.Location = New System.Drawing.Point(476, 189)
+        Me.lbl14.Location = New System.Drawing.Point(635, 233)
+        Me.lbl14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl14.Name = "lbl14"
-        Me.lbl14.Size = New System.Drawing.Size(100, 100)
+        Me.lbl14.Size = New System.Drawing.Size(133, 123)
         Me.lbl14.TabIndex = 0
         Me.lbl14.Text = "1"
         Me.lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -128,9 +133,10 @@ Partial Class frmCasino
         Me.lbl15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl15.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl15.ForeColor = System.Drawing.Color.White
-        Me.lbl15.Location = New System.Drawing.Point(592, 189)
+        Me.lbl15.Location = New System.Drawing.Point(789, 233)
+        Me.lbl15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl15.Name = "lbl15"
-        Me.lbl15.Size = New System.Drawing.Size(100, 100)
+        Me.lbl15.Size = New System.Drawing.Size(133, 123)
         Me.lbl15.TabIndex = 0
         Me.lbl15.Text = "2"
         Me.lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -141,9 +147,10 @@ Partial Class frmCasino
         Me.lbl13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl13.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl13.ForeColor = System.Drawing.Color.White
-        Me.lbl13.Location = New System.Drawing.Point(360, 189)
+        Me.lbl13.Location = New System.Drawing.Point(480, 233)
+        Me.lbl13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl13.Name = "lbl13"
-        Me.lbl13.Size = New System.Drawing.Size(100, 100)
+        Me.lbl13.Size = New System.Drawing.Size(133, 123)
         Me.lbl13.TabIndex = 0
         Me.lbl13.Text = "0"
         Me.lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -154,9 +161,10 @@ Partial Class frmCasino
         Me.lbl16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl16.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl16.ForeColor = System.Drawing.Color.White
-        Me.lbl16.Location = New System.Drawing.Point(708, 189)
+        Me.lbl16.Location = New System.Drawing.Point(944, 233)
+        Me.lbl16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl16.Name = "lbl16"
-        Me.lbl16.Size = New System.Drawing.Size(100, 100)
+        Me.lbl16.Size = New System.Drawing.Size(133, 123)
         Me.lbl16.TabIndex = 0
         Me.lbl16.Text = "3"
         Me.lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -166,10 +174,11 @@ Partial Class frmCasino
         Me.butRoll.BackgroundImage = CType(resources.GetObject("butRoll.BackgroundImage"), System.Drawing.Image)
         Me.butRoll.Enabled = False
         Me.butRoll.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.butRoll.Font = New System.Drawing.Font("Showcard Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.butRoll.Location = New System.Drawing.Point(302, 336)
+        Me.butRoll.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butRoll.Location = New System.Drawing.Point(403, 414)
+        Me.butRoll.Margin = New System.Windows.Forms.Padding(4)
         Me.butRoll.Name = "butRoll"
-        Me.butRoll.Size = New System.Drawing.Size(201, 78)
+        Me.butRoll.Size = New System.Drawing.Size(268, 96)
         Me.butRoll.TabIndex = 1
         Me.butRoll.Text = "ROLL"
         Me.butRoll.UseVisualStyleBackColor = True
@@ -180,10 +189,11 @@ Partial Class frmCasino
         'butBet
         '
         Me.butBet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.butBet.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.butBet.Location = New System.Drawing.Point(31, 336)
+        Me.butBet.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butBet.Location = New System.Drawing.Point(41, 414)
+        Me.butBet.Margin = New System.Windows.Forms.Padding(4)
         Me.butBet.Name = "butBet"
-        Me.butBet.Size = New System.Drawing.Size(135, 23)
+        Me.butBet.Size = New System.Drawing.Size(180, 28)
         Me.butBet.TabIndex = 2
         Me.butBet.Text = "BET"
         Me.butBet.UseVisualStyleBackColor = True
@@ -193,18 +203,20 @@ Partial Class frmCasino
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Location = New System.Drawing.Point(4, 178)
+        Me.Panel1.Location = New System.Drawing.Point(5, 219)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(815, 123)
+        Me.Panel1.Size = New System.Drawing.Size(1086, 151)
         Me.Panel1.TabIndex = 3
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Location = New System.Drawing.Point(28, 22)
+        Me.Panel2.Location = New System.Drawing.Point(37, 27)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 132)
+        Me.Panel2.Size = New System.Drawing.Size(267, 162)
         Me.Panel2.TabIndex = 4
         '
         'Panel3
@@ -214,28 +226,29 @@ Partial Class frmCasino
         Me.Panel3.Controls.Add(Me.lblCash)
         Me.Panel3.Controls.Add(Me.lblAmcash)
         Me.Panel3.Controls.Add(Me.lblName)
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Location = New System.Drawing.Point(4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(194, 126)
+        Me.Panel3.Size = New System.Drawing.Size(259, 155)
         Me.Panel3.TabIndex = 5
         '
         'lblLname
         '
-        Me.lblLname.AutoSize = True
         Me.lblLname.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLname.Location = New System.Drawing.Point(80, 15)
+        Me.lblLname.Location = New System.Drawing.Point(4, 26)
+        Me.lblLname.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLname.Name = "lblLname"
-        Me.lblLname.Size = New System.Drawing.Size(67, 13)
+        Me.lblLname.Size = New System.Drawing.Size(251, 17)
         Me.lblLname.TabIndex = 5
         Me.lblLname.Text = "Last Name"
         '
         'lblCash
         '
-        Me.lblCash.AutoSize = True
         Me.lblCash.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCash.Location = New System.Drawing.Point(0, 74)
+        Me.lblCash.Location = New System.Drawing.Point(2, 75)
+        Me.lblCash.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCash.Name = "lblCash"
-        Me.lblCash.Size = New System.Drawing.Size(69, 24)
+        Me.lblCash.Size = New System.Drawing.Size(253, 29)
         Me.lblCash.TabIndex = 5
         Me.lblCash.Text = "Cash :"
         '
@@ -243,29 +256,31 @@ Partial Class frmCasino
         '
         Me.lblAmcash.AutoSize = True
         Me.lblAmcash.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAmcash.Location = New System.Drawing.Point(78, 74)
+        Me.lblAmcash.Location = New System.Drawing.Point(4, 110)
+        Me.lblAmcash.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAmcash.Name = "lblAmcash"
-        Me.lblAmcash.Size = New System.Drawing.Size(0, 25)
+        Me.lblAmcash.Size = New System.Drawing.Size(62, 31)
         Me.lblAmcash.TabIndex = 5
+        Me.lblAmcash.Text = "€€€"
         '
         'lblName
         '
-        Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(14, 15)
+        Me.lblName.Location = New System.Drawing.Point(4, 9)
+        Me.lblName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(39, 13)
+        Me.lblName.Size = New System.Drawing.Size(251, 17)
         Me.lblName.TabIndex = 5
         Me.lblName.Text = "Name"
         '
         'rtbCores
         '
-        Me.rtbCores.AutoSize = True
         Me.rtbCores.BackColor = System.Drawing.Color.Transparent
-        Me.rtbCores.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbCores.Location = New System.Drawing.Point(31, 377)
+        Me.rtbCores.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbCores.Location = New System.Drawing.Point(41, 464)
+        Me.rtbCores.Margin = New System.Windows.Forms.Padding(4)
         Me.rtbCores.Name = "rtbCores"
-        Me.rtbCores.Size = New System.Drawing.Size(74, 18)
+        Me.rtbCores.Size = New System.Drawing.Size(122, 21)
         Me.rtbCores.TabIndex = 5
         Me.rtbCores.TabStop = True
         Me.rtbCores.Text = "Colors"
@@ -273,12 +288,12 @@ Partial Class frmCasino
         '
         'rtbNumbers
         '
-        Me.rtbNumbers.AutoSize = True
         Me.rtbNumbers.BackColor = System.Drawing.Color.Transparent
-        Me.rtbNumbers.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbNumbers.Location = New System.Drawing.Point(31, 400)
+        Me.rtbNumbers.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbNumbers.Location = New System.Drawing.Point(41, 492)
+        Me.rtbNumbers.Margin = New System.Windows.Forms.Padding(4)
         Me.rtbNumbers.Name = "rtbNumbers"
-        Me.rtbNumbers.Size = New System.Drawing.Size(84, 18)
+        Me.rtbNumbers.Size = New System.Drawing.Size(122, 21)
         Me.rtbNumbers.TabIndex = 5
         Me.rtbNumbers.TabStop = True
         Me.rtbNumbers.Text = "Numbers"
@@ -286,23 +301,27 @@ Partial Class frmCasino
         '
         'cbxColors
         '
+        Me.cbxColors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxColors.FormattingEnabled = True
         Me.cbxColors.Items.AddRange(New Object() {"Black", "Red", "Green"})
-        Me.cbxColors.Location = New System.Drawing.Point(128, 377)
+        Me.cbxColors.Location = New System.Drawing.Point(171, 464)
+        Me.cbxColors.Margin = New System.Windows.Forms.Padding(4)
         Me.cbxColors.MaxDropDownItems = 3
         Me.cbxColors.Name = "cbxColors"
-        Me.cbxColors.Size = New System.Drawing.Size(121, 21)
+        Me.cbxColors.Size = New System.Drawing.Size(160, 24)
         Me.cbxColors.TabIndex = 6
         Me.cbxColors.Visible = False
         '
         'cbxNumbers
         '
+        Me.cbxNumbers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxNumbers.FormattingEnabled = True
         Me.cbxNumbers.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.cbxNumbers.Location = New System.Drawing.Point(128, 400)
+        Me.cbxNumbers.Location = New System.Drawing.Point(171, 492)
+        Me.cbxNumbers.Margin = New System.Windows.Forms.Padding(4)
         Me.cbxNumbers.MaxDropDownItems = 3
         Me.cbxNumbers.Name = "cbxNumbers"
-        Me.cbxNumbers.Size = New System.Drawing.Size(121, 21)
+        Me.cbxNumbers.Size = New System.Drawing.Size(160, 24)
         Me.cbxNumbers.TabIndex = 6
         Me.cbxNumbers.Visible = False
         '
@@ -310,9 +329,10 @@ Partial Class frmCasino
         '
         Me.Panel4.BackColor = System.Drawing.Color.Black
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(366, 22)
+        Me.Panel4.Location = New System.Drawing.Point(488, 27)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(429, 128)
+        Me.Panel4.Size = New System.Drawing.Size(572, 158)
         Me.Panel4.TabIndex = 7
         '
         'Panel5
@@ -323,36 +343,41 @@ Partial Class frmCasino
         Me.Panel5.Controls.Add(Me.lblJackpot)
         Me.Panel5.Controls.Add(Me.lblAmbet)
         Me.Panel5.Controls.Add(Me.lblBet)
-        Me.Panel5.Location = New System.Drawing.Point(3, 3)
+        Me.Panel5.Location = New System.Drawing.Point(4, 4)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(423, 122)
+        Me.Panel5.Size = New System.Drawing.Size(564, 150)
         Me.Panel5.TabIndex = 0
         '
         'lblMultiplier
         '
         Me.lblMultiplier.AutoSize = True
         Me.lblMultiplier.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMultiplier.Location = New System.Drawing.Point(349, 36)
+        Me.lblMultiplier.Location = New System.Drawing.Point(429, 44)
+        Me.lblMultiplier.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMultiplier.Name = "lblMultiplier"
-        Me.lblMultiplier.Size = New System.Drawing.Size(0, 25)
+        Me.lblMultiplier.Size = New System.Drawing.Size(60, 31)
         Me.lblMultiplier.TabIndex = 3
+        Me.lblMultiplier.Text = "x10"
         '
         'lblMulti
         '
         Me.lblMulti.AutoSize = True
         Me.lblMulti.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMulti.Location = New System.Drawing.Point(237, 31)
+        Me.lblMulti.Location = New System.Drawing.Point(280, 20)
+        Me.lblMulti.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMulti.Name = "lblMulti"
-        Me.lblMulti.Size = New System.Drawing.Size(86, 20)
+        Me.lblMulti.Size = New System.Drawing.Size(106, 25)
         Me.lblMulti.TabIndex = 3
         Me.lblMulti.Text = "Multiplier:"
         '
         'lblJackpot
         '
-        Me.lblJackpot.Font = New System.Drawing.Font("Showcard Gothic", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblJackpot.Location = New System.Drawing.Point(22, 61)
+        Me.lblJackpot.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJackpot.Location = New System.Drawing.Point(29, 75)
+        Me.lblJackpot.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblJackpot.Name = "lblJackpot"
-        Me.lblJackpot.Size = New System.Drawing.Size(379, 48)
+        Me.lblJackpot.Size = New System.Drawing.Size(505, 59)
         Me.lblJackpot.TabIndex = 2
         Me.lblJackpot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblJackpot.UseWaitCursor = True
@@ -361,18 +386,21 @@ Partial Class frmCasino
         '
         Me.lblAmbet.AutoSize = True
         Me.lblAmbet.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAmbet.Location = New System.Drawing.Point(88, 36)
+        Me.lblAmbet.Location = New System.Drawing.Point(117, 44)
+        Me.lblAmbet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAmbet.Name = "lblAmbet"
-        Me.lblAmbet.Size = New System.Drawing.Size(0, 25)
+        Me.lblAmbet.Size = New System.Drawing.Size(62, 31)
         Me.lblAmbet.TabIndex = 1
+        Me.lblAmbet.Text = "€€€"
         '
         'lblBet
         '
         Me.lblBet.AutoSize = True
         Me.lblBet.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBet.Location = New System.Drawing.Point(25, 28)
+        Me.lblBet.Location = New System.Drawing.Point(33, 17)
+        Me.lblBet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBet.Name = "lblBet"
-        Me.lblBet.Size = New System.Drawing.Size(46, 24)
+        Me.lblBet.Size = New System.Drawing.Size(59, 29)
         Me.lblBet.TabIndex = 0
         Me.lblBet.Text = "Bet:"
         '
@@ -380,9 +408,10 @@ Partial Class frmCasino
         '
         Me.pic2.BackgroundImage = CType(resources.GetObject("pic2.BackgroundImage"), System.Drawing.Image)
         Me.pic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pic2.Location = New System.Drawing.Point(598, 373)
+        Me.pic2.Location = New System.Drawing.Point(797, 459)
+        Me.pic2.Margin = New System.Windows.Forms.Padding(4)
         Me.pic2.Name = "pic2"
-        Me.pic2.Size = New System.Drawing.Size(48, 62)
+        Me.pic2.Size = New System.Drawing.Size(64, 76)
         Me.pic2.TabIndex = 8
         Me.pic2.TabStop = False
         Me.pic2.Visible = False
@@ -391,9 +420,10 @@ Partial Class frmCasino
         '
         Me.pic4.BackgroundImage = CType(resources.GetObject("pic4.BackgroundImage"), System.Drawing.Image)
         Me.pic4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pic4.Location = New System.Drawing.Point(722, 373)
+        Me.pic4.Location = New System.Drawing.Point(963, 459)
+        Me.pic4.Margin = New System.Windows.Forms.Padding(4)
         Me.pic4.Name = "pic4"
-        Me.pic4.Size = New System.Drawing.Size(48, 62)
+        Me.pic4.Size = New System.Drawing.Size(64, 76)
         Me.pic4.TabIndex = 8
         Me.pic4.TabStop = False
         Me.pic4.Visible = False
@@ -402,9 +432,10 @@ Partial Class frmCasino
         '
         Me.pic1.BackgroundImage = CType(resources.GetObject("pic1.BackgroundImage"), System.Drawing.Image)
         Me.pic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pic1.Location = New System.Drawing.Point(536, 314)
+        Me.pic1.Location = New System.Drawing.Point(715, 386)
+        Me.pic1.Margin = New System.Windows.Forms.Padding(4)
         Me.pic1.Name = "pic1"
-        Me.pic1.Size = New System.Drawing.Size(48, 62)
+        Me.pic1.Size = New System.Drawing.Size(64, 76)
         Me.pic1.TabIndex = 8
         Me.pic1.TabStop = False
         Me.pic1.Visible = False
@@ -413,9 +444,10 @@ Partial Class frmCasino
         '
         Me.pic3.BackgroundImage = CType(resources.GetObject("pic3.BackgroundImage"), System.Drawing.Image)
         Me.pic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pic3.Location = New System.Drawing.Point(660, 314)
+        Me.pic3.Location = New System.Drawing.Point(880, 386)
+        Me.pic3.Margin = New System.Windows.Forms.Padding(4)
         Me.pic3.Name = "pic3"
-        Me.pic3.Size = New System.Drawing.Size(48, 62)
+        Me.pic3.Size = New System.Drawing.Size(64, 76)
         Me.pic3.TabIndex = 8
         Me.pic3.TabStop = False
         Me.pic3.Visible = False
@@ -432,9 +464,10 @@ Partial Class frmCasino
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(798, 2)
+        Me.Button1.Location = New System.Drawing.Point(1064, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(23, 23)
+        Me.Button1.Size = New System.Drawing.Size(31, 28)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "X"
         Me.Button1.UseVisualStyleBackColor = False
@@ -446,9 +479,10 @@ Partial Class frmCasino
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(2, 2)
+        Me.Button2.Location = New System.Drawing.Point(3, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(23, 23)
+        Me.Button2.Size = New System.Drawing.Size(31, 28)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "_"
         Me.Button2.UseVisualStyleBackColor = False
@@ -458,21 +492,33 @@ Partial Class frmCasino
         Me.chb_audio.Appearance = System.Windows.Forms.Appearance.Button
         Me.chb_audio.AutoSize = True
         Me.chb_audio.BackColor = System.Drawing.Color.Transparent
-        Me.chb_audio.Location = New System.Drawing.Point(787, 421)
+        Me.chb_audio.Location = New System.Drawing.Point(1049, 518)
+        Me.chb_audio.Margin = New System.Windows.Forms.Padding(4)
         Me.chb_audio.Name = "chb_audio"
-        Me.chb_audio.Size = New System.Drawing.Size(31, 23)
+        Me.chb_audio.Size = New System.Drawing.Size(37, 27)
         Me.chb_audio.TabIndex = 12
         Me.chb_audio.Text = "On"
         Me.chb_audio.UseVisualStyleBackColor = False
         '
+        'butStats
+        '
+        Me.butStats.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butStats.Location = New System.Drawing.Point(307, 134)
+        Me.butStats.Name = "butStats"
+        Me.butStats.Size = New System.Drawing.Size(100, 55)
+        Me.butStats.TabIndex = 14
+        Me.butStats.Text = "Stats"
+        Me.butStats.UseVisualStyleBackColor = True
+        '
         'frmCasino
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(822, 447)
+        Me.ClientSize = New System.Drawing.Size(1096, 550)
+        Me.Controls.Add(Me.butStats)
         Me.Controls.Add(Me.chb_audio)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -497,6 +543,7 @@ Partial Class frmCasino
         Me.Controls.Add(Me.lbl11)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmCasino"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Casino"
@@ -551,4 +598,5 @@ Partial Class frmCasino
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents chb_audio As CheckBox
+    Friend WithEvents butStats As Button
 End Class

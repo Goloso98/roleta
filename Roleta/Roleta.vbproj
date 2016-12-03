@@ -84,6 +84,12 @@
     <Compile Include="frmCasino.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmStats.Designer.vb">
+      <DependentUpon>frmStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Lang\pt.Designer.vb">
       <DependentUpon>pt.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -118,6 +124,9 @@
     <EmbeddedResource Include="frmCasino.resx">
       <DependentUpon>frmCasino.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStats.resx">
+      <DependentUpon>frmStats.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lang\pt.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>pt.Designer.vb</LastGenOutput>
@@ -130,9 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -148,10 +157,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MOM GET THE CAMERA   MLG Sound Effects %28HD%29[1].wav" />
+    <None Include="Resources\MOM GET THE CAMERA.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sad Violin Airhorn   MLG Sound Effects %28HD%29[1].wav" />
+    <None Include="Resources\Sad Violin Airhorn.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

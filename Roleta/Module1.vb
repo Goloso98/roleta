@@ -20,6 +20,7 @@ Module Module1
     Public users__txt As String = appfolder & "\users.txt"
     Public pass__txt As String = appfolder & "\pass.txt"
     Public nomes__txt As String = appfolder & "\names.txt"
+    Public Id As Integer
 
     Public Function GetAppDataPath() As String ' pasta %appdata%
         Return GetFolderPath(SpecialFolder.ApplicationData)
@@ -128,10 +129,11 @@ Module Module1
                 If (str = texto) Then
                     flag = True
                 End If
-                Console.WriteLine((str & " 'funçao: ProcurarLinha'"))
+                'Console.WriteLine((str & " 'funçao: ProcurarLinha'"))
             Loop
         End Using
         If flag Then
+            Id = num2
             Return num2
         Else
             Return -1
@@ -169,6 +171,51 @@ Module Module1
             apelido = UCase(Left(apelido, 1)) + LCase(Right(apelido, apelido.Length - 1))
         End If
     End Sub
+
+    'gestao wins loses
+    Public win_loses As New List(Of Boolean)
+    Sub adicionar_is_win(state As Boolean)
+        Console.WriteLine(win_loses.Capacity)
+        win_loses.Capacity += 1
+        win_loses.Add(state)
+    End Sub
+    Function streak(qual As String) As Integer
+        Dim valor As Boolean
+        Dim maxstreak As Integer
+        Dim actualstreak As Integer
+
+        maxstreak = 0
+        actualstreak = 0
+
+        If qual = "wins" Then 'streak win ou lose
+            valor = True
+        Else 'lose
+            valor = False
+        End If
+
+        For Each tipo In win_loses
+            If tipo = valor Then
+                actualstreak += 1
+            Else
+                actualstreak = 0
+            End If
+            If actualstreak > maxstreak Then
+                maxstreak = actualstreak
+            End If
+        Next
+        Return maxstreak
+    End Function
+    Function vitorias() As Integer
+        Dim contador As Integer
+        contador = 0
+        For Each tipo In win_loses
+            If tipo Then
+                contador += 1
+            End If
+        Next
+        Return contador
+    End Function
+
 
     '------encriptacao......
     Dim DES As New TripleDESCryptoServiceProvider

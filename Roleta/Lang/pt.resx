@@ -228,4 +228,52 @@
   <data name="Sucesso" xml:space="preserve">
     <value>Sucesso</value>
   </data>
+  <data name="Black" xml:space="preserve">
+    <value>Preto</value>
+  </data>
+  <data name="butBet" xml:space="preserve">
+    <value>APOSTAR</value>
+  </data>
+  <data name="butStats" xml:space="preserve">
+    <value>Estatísticas</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="Inputbox_linha1" xml:space="preserve">
+    <value>Quanto vais apostar?</value>
+  </data>
+  <data name="Inputbox_title" xml:space="preserve">
+    <value>Aposta</value>
+  </data>
+  <data name="lblBet" xml:space="preserve">
+    <value>Aposta:</value>
+  </data>
+  <data name="lblCash" xml:space="preserve">
+    <value>Dinheiro :</value>
+  </data>
+  <data name="lblMulti" xml:space="preserve">
+    <value>Multiplicador:</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Vermelho</value>
+  </data>
+  <data name="rtbCores" xml:space="preserve">
+    <value>Cores</value>
+  </data>
+  <data name="rtbNumbers" xml:space="preserve">
+    <value>Numeros</value>
+  </data>
+  <data name="lblBls" xml:space="preserve">
+    <value>MÁXIMA PERDA SEGUIDA</value>
+  </data>
+  <data name="lblBws" xml:space="preserve">
+    <value>MÁXIMO GANHO SEGUIDO</value>
+  </data>
+  <data name="lblWl" xml:space="preserve">
+    <value>RÁCIO GANHOS</value>
+  </data>
+  <data name="lbl_title" xml:space="preserve">
+    <value>SESSÃO ATUAL</value>
+  </data>
 </root>

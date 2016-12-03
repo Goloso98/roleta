@@ -5,6 +5,9 @@
     Dim bet As Double
     Dim cash As Double
     Dim countercards As Integer
+    Dim red As String = getRMValue("Red")
+    Dim black As String = getRMValue("Black")
+    Dim green As String = getRMValue("Green")
 
     Sub audio(state As Boolean)
         If chb_audio.Checked Then
@@ -182,29 +185,35 @@
                     lblJackpot.Text = ("JACKPOT!!!")
                     audio(True)
                     cash = bet * 14 + cash
+                    adicionar_is_win(True)
                 Else
                     lblJackpot.Text = ("YOU LOSE!!!")
                     audio(False)
+                    adicionar_is_win(False)
                 End If
             End If
             If rtbCores.Checked = True Then
-                If lbl13.BackColor = Color.Green And cbxColors.Text = ("Green") Then
+                If lbl13.BackColor = Color.Green And cbxColors.Text = green Then
                     lblJackpot.Text = ("JACKPOT!!!")
                     audio(True)
                     cash = bet * 14 + cash
+                    adicionar_is_win(True)
                 End If
-                If lbl13.BackColor = Color.Black And cbxColors.Text = ("Black") Then
+                If lbl13.BackColor = Color.Black And cbxColors.Text = black Then
                     lblJackpot.Text = ("JACKPOT!!!")
                     audio(True)
                     cash = bet * 2 + cash
+                    adicionar_is_win(True)
                 Else
-                        If lbl13.BackColor = Color.Red And cbxColors.Text = ("Red") Then
+                    If lbl13.BackColor = Color.Red And cbxColors.Text = red Then
                         lblJackpot.Text = ("JACKPOT!!!")
                         audio(True)
                         cash = bet * 2 + cash
+                        adicionar_is_win(True)
                     Else
                         lblJackpot.Text = ("YOU LOSE!!!")
                         audio(False)
+                        adicionar_is_win(False)
                     End If
                 End If
             End If
@@ -216,7 +225,30 @@
         End If
     End Sub
 
+    Sub cbx_cores_traducao()
+        cbxColors.Items.Clear()
+        cbxColors.Items.Add(black)
+        cbxColors.Items.Add(red)
+        cbxColors.Items.Add(green)
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'traduçao
+        cbx_cores_traducao()
+        lblCash.Text = getRMValue("lblCash")
+        butStats.Text = getRMValue("butStats")
+        lblBet.Text = getRMValue("lblBet")
+        lblMulti.Text = getRMValue("lblMulti")
+        butBet.Text = getRMValue("butBet")
+        rtbCores.Text = getRMValue("rtbCores")
+        rtbNumbers.Text = getRMValue("rtbNumbers")
+        lblAmbet.Text = ""
+        lblMultiplier.Text = ""
+
+
+        Dim nome As Array = Split(Decrypt(LerLinha(Id, nomes__txt), Hash), " ")
+        lblName.Text = nome(0)
+        lblLname.Text = nome(1)
+
         Randomize()
         counter = 0
         lap = 0
@@ -235,7 +267,7 @@
         Do
             erro = ""
             Try
-                bet = InputBox("How much shall you bet?", "Bet")
+                bet = InputBox(getRMValue("Inputbox_linha1"), getRMValue("Inputbox_title"), bet)
             Catch ex As Exception
                 erro = ex.Message
             End Try
@@ -248,7 +280,6 @@
             lblAmcash.Text = (cash & " $")
             lblAmbet.Text = (bet & " $")
         End If
-
 
         If butBet.Enabled = False And ((cbxColors.Text <> ("")) Or (cbxNumbers.Text <> (""))) Then
             butRoll.Enabled = True
@@ -276,10 +307,10 @@
             butRoll.Enabled = True
         End If
 
-        If cbxColors.Text = ("Green") Then
+        If cbxColors.Text = green Then
             lblMultiplier.Text = ("x14")
         End If
-        If cbxColors.Text = ("Black") Or cbxColors.Text = ("Red") Then
+        If cbxColors.Text = black Or cbxColors.Text = red Then
             lblMultiplier.Text = ("x2")
         End If
 
@@ -324,7 +355,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.WindowState = FormWindowState.Minimized
+        WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chb_audio.CheckedChanged
@@ -335,5 +366,14 @@
             chb_audio.Text = "Off"
         End If
         My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub butStats_MouseHover(sender As Object, e As EventArgs) Handles butStats.MouseHover
+        frmStats.Show()
+        frmStats.Location = New Point(Location.X + Width, Location.Y)
+    End Sub
+
+    Private Sub butStats_MouseLeave(sender As Object, e As EventArgs) Handles butStats.MouseLeave
+        frmStats.Close()
     End Sub
 End Class
