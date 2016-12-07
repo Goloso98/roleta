@@ -254,8 +254,16 @@
         lblAmcash.Text = (cash & " $")
         cartas.Start()
         countercards = 1
+
+        'audio option style
         chb_audio.Checked = True
-        chb_audio.Text = "On"
+        chb_audio.Text = ""
+        chb_audio.FlatStyle = FlatStyle.Flat
+        chb_audio.FlatAppearance.BorderSize = 0
+        chb_audio.FlatAppearance.MouseDownBackColor = Color.Transparent
+        chb_audio.FlatAppearance.MouseOverBackColor = Color.Transparent
+        chb_audio.FlatAppearance.CheckedBackColor = Color.Transparent
+        chb_audio.BackColor = Color.Transparent
 
     End Sub
 
@@ -359,10 +367,12 @@
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chb_audio.CheckedChanged
         If chb_audio.Checked Then
-            chb_audio.Text = "On"
+            'chb_audio.Text = "On"
             'imagem on
+            chb_audio.Image = My.Resources.sound_ico
         Else
-            chb_audio.Text = "Off"
+            chb_audio.Image = My.Resources.mute_ico
+            'chb_audio.Text = "Off"
         End If
         My.Computer.Audio.Stop()
     End Sub

@@ -492,12 +492,12 @@ Partial Class frmCasino
         Me.chb_audio.Appearance = System.Windows.Forms.Appearance.Button
         Me.chb_audio.AutoSize = True
         Me.chb_audio.BackColor = System.Drawing.Color.Transparent
-        Me.chb_audio.Location = New System.Drawing.Point(1049, 518)
+        Me.chb_audio.Image = Global.Roleta.My.Resources.Resources.sound_ico
+        Me.chb_audio.Location = New System.Drawing.Point(1053, 509)
         Me.chb_audio.Margin = New System.Windows.Forms.Padding(4)
         Me.chb_audio.Name = "chb_audio"
-        Me.chb_audio.Size = New System.Drawing.Size(37, 27)
+        Me.chb_audio.Size = New System.Drawing.Size(38, 38)
         Me.chb_audio.TabIndex = 12
-        Me.chb_audio.Text = "On"
         Me.chb_audio.UseVisualStyleBackColor = False
         '
         'butStats
