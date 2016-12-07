@@ -170,12 +170,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mlghappy.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mlgsad.wav" />
+    <None Include="Resources\backmusic.wav" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

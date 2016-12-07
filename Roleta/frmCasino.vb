@@ -9,15 +9,6 @@
     Dim black As String = getRMValue("Black")
     Dim green As String = getRMValue("Green")
 
-    Sub audio(state As Boolean)
-        If chb_audio.Checked Then
-            If state Then
-                My.Computer.Audio.Play(My.Resources.mlghappy, AudioPlayMode.Background)
-            Else
-                My.Computer.Audio.Play(My.Resources.mlgsad, AudioPlayMode.Background)
-            End If
-        End If
-    End Sub
     Private Sub butRoll_Click(sender As Object, e As EventArgs) Handles butRoll.Click
         lblJackpot.Text = ("")
 
@@ -181,36 +172,30 @@
             If rtbNumbers.Checked = True Then
                 If lbl13.Text = cbxNumbers.Text Then
                     lblJackpot.Text = ("JACKPOT!!!")
-                    audio(True)
                     cash = bet * 14 + cash
                     adicionar_is_win(True)
                 Else
                     lblJackpot.Text = ("YOU LOSE!!!")
-                    audio(False)
                     adicionar_is_win(False)
                 End If
             End If
             If rtbCores.Checked = True Then
                 If lbl13.BackColor = Color.Green And cbxColors.Text = green Then
                     lblJackpot.Text = ("JACKPOT!!!")
-                    audio(True)
                     cash = bet * 14 + cash
                     adicionar_is_win(True)
                 End If
                 If lbl13.BackColor = Color.Black And cbxColors.Text = black Then
                     lblJackpot.Text = ("JACKPOT!!!")
-                    audio(True)
                     cash = bet * 2 + cash
                     adicionar_is_win(True)
                 Else
                     If lbl13.BackColor = Color.Red And cbxColors.Text = red Then
                         lblJackpot.Text = ("JACKPOT!!!")
-                        audio(True)
                         cash = bet * 2 + cash
                         adicionar_is_win(True)
                     Else
                         lblJackpot.Text = ("YOU LOSE!!!")
-                        audio(False)
                         adicionar_is_win(False)
                     End If
                 End If
@@ -256,6 +241,8 @@
         countercards = 1
 
         'audio option style
+        My.Computer.Audio.Play(My.Resources.backmusic, AudioPlayMode.BackgroundLoop)
+
         chb_audio.Checked = True
         chb_audio.Text = ""
         chb_audio.FlatStyle = FlatStyle.Flat
@@ -367,14 +354,15 @@
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chb_audio.CheckedChanged
         If chb_audio.Checked Then
+            My.Computer.Audio.Play(My.Resources.backmusic, AudioPlayMode.BackgroundLoop)
             'chb_audio.Text = "On"
             'imagem on
             chb_audio.Image = My.Resources.sound_ico
         Else
+            My.Computer.Audio.Stop()
             chb_audio.Image = My.Resources.mute_ico
             'chb_audio.Text = "Off"
         End If
-        My.Computer.Audio.Stop()
     End Sub
 
     Private Sub butStats_MouseHover(sender As Object, e As EventArgs) Handles butStats.MouseHover
