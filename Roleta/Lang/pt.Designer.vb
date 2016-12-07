@@ -146,6 +146,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Para cancelar ou sair -&gt; Escrever &quot;0&quot; depois clicar em &quot;Ok&quot;.
+        '''</summary>
+        Friend Shared ReadOnly Property Inputbox_linha2() As String
+            Get
+                Return ResourceManager.GetString("Inputbox_linha2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Aposta.
         '''</summary>
         Friend Shared ReadOnly Property Inputbox_title() As String

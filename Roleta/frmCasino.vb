@@ -21,8 +21,6 @@
     Private Sub butRoll_Click(sender As Object, e As EventArgs) Handles butRoll.Click
         lblJackpot.Text = ("")
 
-        My.Computer.Audio.Stop()
-
         Randomize()
         stoplap = CInt(Math.Floor((65 - 40 + 1) * Rnd())) + 40
 
@@ -244,7 +242,6 @@
         lblAmbet.Text = ""
         lblMultiplier.Text = ""
 
-
         Dim nome As Array = Split(Decrypt(LerLinha(Id, nomes__txt), Hash), " ")
         lblName.Text = nome(0)
         lblLname.Text = nome(1)
@@ -267,7 +264,9 @@
         Do
             erro = ""
             Try
-                bet = InputBox(getRMValue("Inputbox_linha1"), getRMValue("Inputbox_title"), bet)
+                bet = InputBox(getRMValue("Inputbox_linha1") & vbCrLf &
+                               getRMValue("InputBox_linha2"),
+                               getRMValue("Inputbox_title"), 0)
             Catch ex As Exception
                 erro = ex.Message
             End Try

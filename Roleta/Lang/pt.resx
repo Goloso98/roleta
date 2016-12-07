@@ -276,4 +276,7 @@
   <data name="lbl_title" xml:space="preserve">
     <value>SESSÃO ATUAL</value>
   </data>
+  <data name="Inputbox_linha2" xml:space="preserve">
+    <value>Para cancelar ou sair -&gt; Escrever "0" depois clicar em "Ok"</value>
+  </data>
 </root>
