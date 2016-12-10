@@ -167,6 +167,8 @@
 
         'mensagem utilizador aceite
         MessageBox.Show(getRMValue("msg8"), getRMValue("Sucesso"), MessageBoxButtons.OK)
+        but_login.Focus()
+        ActivateTabStop (False)
     End Sub
 
     Private Sub form_login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -199,6 +201,7 @@
         Width = 300 'comprimento
         Height = 686 'altura
         ActivateTabStop(True)
+        txt_signup_user.Focus()
     End Sub
 
     Private Sub but_signup_add_Click(sender As Object, e As EventArgs) Handles but_signup_add.Click
